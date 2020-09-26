@@ -39,6 +39,9 @@
                                             </div>  
                     </div>
                     <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                        <h1>Prueba Molecular</h1>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
                                         <h1>Quenuales</h1>
                     </div>
                                
@@ -46,15 +49,6 @@
 
 
             <div class="col-3">
-                <div class="row bg-dark h-25 m-3 rounded p-3">
-                    <h5 class="text-white text-center">Modelo</h5>
-                    <div class="col-12">
-                        <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Normal</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Quenuales</a>
-                        </div>
-                    </div>                    
-                 </div>
                 <form class="row bg-warning h-25 m-3 rounded p-3" method="POST" action="procesa.php" enctype="multipart/form-data">
                         <h5 class="text-white text-center">Archivo</h5>
                         <div class="custom-file">
@@ -66,10 +60,17 @@
                         </div>
                 </form>
                 <div class="row bg-danger h-25 m-3 rounded p-3">
-                    <h5 class="text-white text-center">Exportar</h5>
+                    <h5 class="text-white text-center">Exportar Serologica</h5>
                     <div class="form-group d-block">
-                        <a href="reportes/impresion.php" class=" btn btn-success">Consolidar</a>
-                        <a href="split/split.php" class="  btn btn-success">Expostarr</a>
+                        <a href="reportes/impresion.php" class="btn btn-success">Consolidar</a>
+                        <a href="split/split.php" class="btn btn-success">Expostarr</a>
+                    </div>
+                </div>
+                <div class="row bg-dark h-25 m-3 rounded p-3">
+                    <h5 class="text-white text-center">Exportar Molecular</h5>
+                    <div class="form-group d-block">
+                        <a href="reportes/impresion2.php" class="btn btn-primary">Consolidar</a>
+                        <a href="split/split.php" class="btn btn-primary">Expostarr</a>
                     </div>
                 </div>
             </div>

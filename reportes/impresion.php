@@ -25,7 +25,7 @@
     $fecha_inicio=explode('/',$final[$z]['A']);
     $fecha_final=explode('/',$final[$z]['B']);
     $dias=$final[$z]['F']+1;
-    $contenido="Por la presente se deja constancia que ".$final[$z]['C'].", identificado con DNI: ".$final[$z]['D'].", realizó aislamiento social por ".$dias." días, luego de haber pasado el perfil COVID-19 en nuestra institución, obteniendo resultado positivo en  la  prueba  serológica,  este periodo está  comprendido  entre el: ".$fecha_inicio[1]."/0".$fecha_inicio[0]. "/".$fecha_inicio[2]." al ".$fecha_final[1]."/0".$fecha_final[0]. "/".$fecha_final[2].", quien ha evolucionado favorablemente.";
+    $contenido="Por la presente se deja constancia que ".$final[$z]['C'].", identificado con DNI: ".$final[$z]['D'].", realizó aislamiento social por ".$dias." días, luego de haber pasado el perfil COVID-19 en nuestra institución, obteniendo resultado positivo en  la  prueba serológica,  este periodo está  comprendido  entre el: ".$fecha_inicio[1]."/0".$fecha_inicio[0]. "/".$fecha_inicio[2]." al ".$fecha_final[1]."/0".$fecha_final[0]. "/".$fecha_final[2].", quien ha evolucionado favorablemente.";
     $pdf->MultiCell(141,10,utf8_decode($contenido),0,'J');
     $pdf->MultiCell(141,10,"Se expide la presente a solicitud del interesado para los fines que crea por conveniente",0,'J');
     $pdf->Ln(15);
