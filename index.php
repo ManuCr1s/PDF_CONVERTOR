@@ -7,70 +7,59 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body class="container-fluid bg-light">
-    <div class="row justify-content-around">
-            <div  id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                            <div class="col-7 align-self-center shadow vh-100 d-inline-flex bg-white border border-white rounded-lg mt-2">
-                                                    <div class="partes">
-                                                            <div class="cabecera">
-                                                                <img src="img/logo.png" alt="">
-                                                            </div>
-                                                            <p class="parrafo_0">
-                                                                CONSTANCIA DE ALTA
-                                                            </p>
-                                                            <div class="cuerpo">
-                                                                <p class="parrafo_1">
-                                                                    Por  la  presente  se deja  constancia  que, ,
-                                                                    <br>identificado con DNI: , realizo aislamiento social por 14 días, luego de haber 
-                                                                    <br>pasado perfil COVID -19 en nuestra institución, obteniendo resultado positivo 
-                                                                    <br>en la prueba serológica,  este periodo está comprendido entre el al 
-                                                                    <br4>, quien ha evolucionado favorablemente.
-                                                                    <br>Se expide la presente a solicitud del interesado para los fines que crea 
-                                                                    <br>por conveniente.
-                                                                </p> 
-                                                            </div>
-                                                            <div class="pie">
-                                                                <img src="img/firma_llerena.png" alt="">
-                                                            </div>
-                                                            <p class="parrafo_2">CMP: 49335<br>
-                                                            Director de vigilancia Médica Ocupacional &Telegestión<br>
-                                                            S.G. Natclar SAC</p>
-                                                    </div>
-                                            </div>  
+    <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4 shadow vh-100 bg-white m-3">
+                    <div class="partes">
+                            <div class="cabecera">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                            <p class="parrafo_0">
+                                CONSTANCIA DE ALTA
+                            </p>
+                            <div class="cuerpo">
+                                <p class="parrafo_1">
+                                    Por  la  presente  se deja  constancia  que, ,
+                                    <br>identificado con DNI: , realizo aislamiento social por 14 días, luego de haber 
+                                    <br>pasado perfil COVID -19 en nuestra institución, obteniendo resultado positivo 
+                                    <br>en la prueba serológica,  este periodo está comprendido entre el al 
+                                    <br4>, quien ha evolucionado favorablemente.
+                                    <br>Se expide la presente a solicitud del interesado para los fines que crea 
+                                    <br>por conveniente.
+                                </p> 
+                            </div>
+                            <div class="pie">
+                                <img src="img/firma_llerena.png" alt="">
+                            </div>
+                            <p class="parrafo_2">CMP: 49335<br>
+                            Director de vigilancia Médica Ocupacional &Telegestión<br>
+                            S.G. Natclar SAC</p>
                     </div>
-                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                                        <h1>Prueba Molecular</h1>
-                    </div>
-                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                                        <h1>Quenuales</h1>
-                    </div>
-                               
-            </div>            
-
-
-            <div class="col-3">
+            </div>  
+                                    
+            <div class="col-5 m-3">
                 <form class="row bg-warning h-25 m-3 rounded p-3" method="POST" action="procesa.php" enctype="multipart/form-data">
-                        <h5 class="text-white text-center">Archivo</h5>
-                        <div class="custom-file">
+                        <h5 class="text-white col-12">Archivo</h5>
+                        <div class="custom-file col-10 m-1">
                             <input type="file" name="archivo" class="custom-file-input" />
                             <label type="file" class="custom-file-label">Seleccionar Archivo</label>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        <div class="form-group col-10 m-1">
+                            <button type="submit" class="btn btn-info">Enviar</button>
                         </div>
                 </form>
                 <div class="row bg-danger h-25 m-3 rounded p-3">
-                    <h5 class="text-white text-center">Exportar Serologica</h5>
-                    <div class="form-group d-block">
-                        <a href="reportes/impresion.php" class="btn btn-success">Consolidar</a>
-                        <a href="split/split.php" class="btn btn-success">Expostarr</a>
+                    <h5 class="text-white col-12">Consolidar Pruebas</h5>
+                    <div class="form-group d-flex col-12">
+                        <a href="reportes/impresion.php" class="col-4 btn btn-success p-2 m-1">SEROLOGICAS</a>
+                        <a href="reportes/impresion2.php" class="col-4 btn btn-secondary p-2 m-1">MOLECULARES</a>
+                        <a href="reportes/impresion3.php" class="col-4 btn text-white btn-warning p-2 m-1">QUENUALES</a>
                     </div>
                 </div>
                 <div class="row bg-dark h-25 m-3 rounded p-3">
-                    <h5 class="text-white text-center">Exportar Molecular</h5>
-                    <div class="form-group d-block">
-                        <a href="reportes/impresion2.php" class="btn btn-primary">Consolidar</a>
-                        <a href="split/split.php" class="btn btn-primary">Expostarr</a>
+                    <h5 class="text-white col-12">Exportar PDFS</h5>
+                    <div class="form-group col-12">
+                        <a href="split/split.php" class="btn btn-primary">EXPORTAR</a>
                     </div>
                 </div>
             </div>
